@@ -1,0 +1,7 @@
+I first programmed my code and had it run against the sample.dump and sample.output that was given until it matched.
+I then ran my fullSample.dump and tried to have it match what I saw in mips.
+I tried testing various instructions with negative numbers and positive numbers.
+For load word and store word, I tried with addresses that should cause a memory exception.
+The current fullSample.output does load and store word at the limit of 0x00401000 and 0x00403ffc so it does cause a memory exception and exit.
+I also had to take into account that load and store word would not match mars as mars' instruction and memory sections is larger than we have. 
+Once I felt that my output correctly matched what mars does/would do, I did a final study of each of my instructions and followed their paths in my code.
